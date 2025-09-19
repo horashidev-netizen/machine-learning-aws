@@ -59,3 +59,10 @@ def lambda_handler(event, context):
     # Finally, we return the values from response variable to the caller, which could be a test event or an AWS service performing a synchronous call.
     # The execution of the lambda function is finished.
     return response
+
+
+# ======== Sample test =========
+# {
+#    "emoji_type" : 1,
+#    "message": "Hello world!"
+# }

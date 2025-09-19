@@ -1,0 +1,19 @@
+Your API endpoint will receive a POST call with the following JSON object:
+
+{
+    "available": "True",
+    "type": "Bicycle"
+}
+
+-Our test service will invoke your Amazon API Gateway URL, and then check that the rental_app table was updated.
+-Enter the API Gateway invoke URL for your new vehicles resource with /vehicles at the end. 
+-Enter the name of your new DynamoDB table (rental_app).
+
+**Hints**
+- The lambda function does not need to be updated to complete the DIY.
+- Use the below JSON structure to test creating new vehicles using the API Gateway.
+
+{
+    "available": "False",
+    "type": "Rocket"
+}

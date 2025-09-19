@@ -1,0 +1,42 @@
+{
+    "schemaVersion": "1.x",
+    "notifications": [{
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+        "displayIf": {
+            "extensionId": "amazonwebservices.amazon-q-vscode",
+            "extensionVersion": {
+                "type": "exactMatch",
+                "values": [
+                    "1.84.0"
+                ]
+            }
+        },
+        "uiRenderInstructions": {
+            "content": {
+                "en-US": {
+                    "title": "Amazon Q update required",
+                    "description": "Due to a security concern, all users on version 1.84.0 need to update the plugin to version 1.85.0."
+                }
+            },
+            "onReceive": "modal",
+            "onClick": {
+                "type": "modal"
+            },
+            "actions": [
+                {
+                    "type": "updateAndReload",
+                    "displayText": {
+                        "en-US": "Update and Reload"
+                    }
+                },
+                {
+                    "type": "openUrl",
+                    "url": "https://aws.amazon.com/security/security-bulletins/AWS-2025-015/",
+                    "displayText": {
+                        "en-US": "More information"
+                    }
+                }
+            ]
+        }
+    }]
+}
